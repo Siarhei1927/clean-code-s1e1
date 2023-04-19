@@ -1,4 +1,3 @@
-/* Basic Style */
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -16,7 +15,7 @@
   width: 100%;
 }
 
-.header .more-inf {
+.header-link {
   font-family: fantasy, cursive;
 }
 
@@ -28,7 +27,7 @@
 
 }
 
-.main-page {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,18 +39,18 @@
   flex-grow: 1;
 }
 
-.input-wrapper {
+.main-input__wrapper {
   display: flex;
   margin-top: 20px;
 }
 
-.all-tasks {
+.main-ul {
   margin: 0;
   padding: 0px;
 }
 
-.tasks-list, 
-.headline {
+.main-list, 
+.main-headline {
   list-style: none;
 }
 
@@ -80,7 +79,7 @@
   color: #3a3a3a;
 }
 
-.headline {
+.main-headline {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -90,7 +89,7 @@
   text-transform: uppercase;
 }
 
-#new-task {
+#main-task__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,7 +100,7 @@
   border-radius: 6px;
 }
 
-.input-task[type="text"] {
+.main-task__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -114,45 +113,49 @@
   color: #888;
 }
 
-.input-task[type="text"]:focus {
+.main-task__text:focus {
   color: #333;
 }
 
-.task[for="new-task"] {
+.main-task__text {
   display: block;
   margin: 0 0 20px;
 }
 
-.input-task#new-task {
-  width: 318px;
-}
-
-.tasks-list {
+.main-list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.tasks-list > * {
+#edit-mode {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-list > * {
   vertical-align: middle;
 }
 
-.tasks-list > .input-task[type="checkbox"] {
+.main-list > .input-task__checkbox {
   margin: 0 10px;
 }
 
-.tasks-list > .task {
+.main-list > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.tasks-list > .input-task[type="text"] {
+.main-list > .main-task__text {
   width: 226px;
 }
 
@@ -171,16 +174,17 @@
   color: #888;
 }
 
-.all-tasks .tasks-list .input-task[type=text] {
+.main-ul .main-list .main-task__text {
   display: none;
 }
 
-.all-tasks .edit-mode .input-task[type=text] {
+.main-ul .main-list__edit .main-task__text {
   display: inline-block;
   width: 224px;
   flex-grow: 1;
+  margin: 0px;
 }
 
-.all-tasks .edit-mode .task {
+.main-ul .main-list__edit .task {
   display: none;
 }
