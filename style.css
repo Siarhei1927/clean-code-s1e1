@@ -37,7 +37,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .input-wrapper {
@@ -134,7 +134,7 @@
 }
 
 .tasks-list >    .input-task[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 .button-delete img {
@@ -148,12 +148,12 @@
 }
 
 .all-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 .all-tasks .tasks-list .input-task[type=text] {
-  display: none
+  display: none;
 }
 
 .all-tasks .edit-mode .input-task[type=text] {
