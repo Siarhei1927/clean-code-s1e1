@@ -4,46 +4,59 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header img {
   width: 100%;
 }
+
 .header .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+
+  .header {
+    text-align: center;
+  }
+
 }
-}
+
 .main-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .input-wrapper {
   display: flex;
 }
+
 .all-tasks {
   margin:0;
   padding: 0px;
 }
+
 .tasks-list, .headline {
   list-style:none;
 }
+
 .input-task,button{
     outline:none;
 }
+
 #button-add, .button-edit, .button-delete {
   background: none;
   border: 0px;
@@ -58,7 +71,6 @@
   color: #3a3a3a;
 }
 
-/* Heading */
 .headline,
 .task[for="new-task"] {
   color: #333;
@@ -69,6 +81,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .input-task[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -81,20 +94,20 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .input-task[type="text"]:focus {
   color: #333;
 }
 
-/* New Task */
 .task[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
+
 .input-task#new-task {
   width: 318px;
 }
 
-/* Task list */
 .tasks-list {
   overflow: hidden;
   padding: 20px 0;
@@ -104,6 +117,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .tasks-list > * {
   vertical-align: middle;
 }
@@ -111,31 +125,33 @@
 .tasks-list > .input-task[type="checkbox"] {
   margin: 0 10px;
 }
+
 .tasks-list > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .tasks-list >    .input-task[type="text"] {
   width: 226px
 }
+
 .button-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button-delete img:hover {
   transform: rotateZ(0);
 }
 
-/* Completed */
 .all-tasks label {
   text-decoration: line-through
   color: #888;
 }
 
-/* Edit Task */
 .all-tasks .tasks-list .input-task[type=text] {
   display:none
 }
